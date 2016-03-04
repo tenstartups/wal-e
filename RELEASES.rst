@@ -1,26 +1,6 @@
 Releases
 ========
 
-v0.9.2
-------
-
-Release v0.9.2 fixes environment variable clobbering caused by the
-updated statement_timeout suppression patch that can break use of
-wrapper scripts ``psql``.  By Kenneth Shelton.
-
-v0.9.1
-------
-
-Release v0.9.1 adds support for Azure SAS Tokens (by Kenny Johansson)
-and fixes several bugs.  It is backwards and forwards compatible with
-v0.9.0.
-
-The bugs fixed are:
-
-* Customized .psqlrc files no longer break WAL-E (Feike Steenbergen)
-* ``statement_timeout`` suppression should work now (Anatolii Mihailenco)
-* Files unlinked during backup no longer cause a crash (Léo Cavaillé)
-
 v0.9.0
 ------
 
